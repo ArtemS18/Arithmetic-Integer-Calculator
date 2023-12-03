@@ -1,6 +1,7 @@
+set(SOURCE_NAME ${PROJECT_NAME}-Source)
 
 set(SOURCE Main.cpp CheakStr.cpp Parser.cpp)
 
 set(HEADERS Headers.h)
 
-add_executable(${PROJECT_NAME} ${SOURCE} ${HEADERS})
+add_executable(${SOURCE_NAME} ${SOURCE} ${HEADERS})
