@@ -1,0 +1,13 @@
+set(SOURCE Main.cpp CheakStr.cpp Parser.cpp)
+
+set(HEADERS Headers.h)
+#include_directories(${PROJECT_SOURCE_DIR}/math)
+
+set(Boost_USE_STATIC_LIBS OFF)
+set(Boost_USE_MULTITHREADED ON)
+find_package(Boost COMPONENTS iosteam math.h REQUIRED)
+include_directories(${Boost_INCLUDE_DIRS})
+
+target_link_libraries(${PROJECT_NAME} ${Boost_LIBRARIES})
+
+add_executable(${PROJECT_NAME} ${SOURCE} ${HEADERS})
