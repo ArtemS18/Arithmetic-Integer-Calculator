@@ -1,6 +1,6 @@
 #include "Headers.h"
-#include "Tools.cpp"
-#include "Stack.cpp"
+#include <../CheakLine/CheckLine.hpp>
+#include <../Stack/Stack.cpp>
 using namespace std;
 
 void postfixNotation(char* s, char* newS, int len) {
