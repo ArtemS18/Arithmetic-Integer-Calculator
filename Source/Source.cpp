@@ -1,5 +1,5 @@
 #include "Headers.h"
-//#include "Stack.hpp"
+#include "Tools.cpp"
 #include "Stack.cpp"
 using namespace std;
 
