@@ -9,7 +9,7 @@ add_subdirectory(Source)
 
 set(SOURCE_NAME ${PROJECT_NAME}-Source)
 
-set(SOURCE Main.cpp CheakStr.cpp Parser.cpp)
+set(SOURCE Main.cpp Source.cpp)
 
 set(HEADERS Headers.h)
 
