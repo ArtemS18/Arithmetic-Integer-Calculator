@@ -6,3 +6,11 @@ project(${PROJECT_NAME})
 set(CMAKE_CXX_STANDARD 20)
 
 add_subdirectory(Source)
+
+set(SOURCE_NAME ${PROJECT_NAME}-Source)
+
+set(SOURCE Main.cpp CheakStr.cpp Parser.cpp)
+
+set(HEADERS Headers.h)
+
+add_executable(${SOURCE_NAME} ${SOURCE} ${HEADERS})
