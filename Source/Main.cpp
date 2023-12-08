@@ -1,6 +1,6 @@
 ﻿#include "Headers.h"
 #include "ChechLine.hpp"
-#include <../CheakLine/CheckLine.hpp>
+#include "CheckLine.hpp"
 
 using namespace std;
 
