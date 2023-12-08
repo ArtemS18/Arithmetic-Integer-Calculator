@@ -5,12 +5,13 @@ project(${PROJECT_NAME})
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_subdirectory(Source)
+set(SOURCE Source/Main.cpp Source/Source.cpp)
 
-set(SOURCE_NAME ${PROJECT_NAME}-Source)
+set(HEADERS 
+      Source/Headers.h 
+      Source/Tools/Tools.hpp 
+      Source/Stack/Stack.hpp 
+      Source/CheckLine/CheakLine.hpp
+)
 
-set(SOURCE Main.cpp Source.cpp)
-
-set(HEADERS Headers.h)
-
-add_executable(${SOURCE_NAME} ${SOURCE} ${HEADERS})
+add_executable(${PROJECT_NAME} ${SOURCE} ${HEADERS})
