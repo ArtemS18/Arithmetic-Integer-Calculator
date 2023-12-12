@@ -5,7 +5,13 @@ project(${PROJECT_NAME})
 
 set(CMAKE_CXX_STANDARD 20)
 
-set(SOURCE Source/Main.cpp Source/Source.cpp)
+set(SOURCE 
+	Source/Main.cpp
+	Source/Source.cpp
+	Source/Tools/Tools.cpp 
+      	Source/Stack/Stack.cpp 
+      	Source/CheckLine/CheckLine.cpp
+)
 
 set(HEADERS 
       Source/Headers.h 
