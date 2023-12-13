@@ -21,3 +21,5 @@ set(HEADERS
 )
 
 add_executable(${PROJECT_NAME} ${SOURCE} ${HEADERS})
+
+target_include_directories(${PROJECT_NAME} PUBLIC Source Tools Stack CheckLine)
