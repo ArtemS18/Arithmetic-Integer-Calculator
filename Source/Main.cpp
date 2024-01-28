@@ -23,7 +23,6 @@ int main()
         p_inpStr = new char[newLen];
         CheckLine::CreateNewStr(p_inpStr, inpStr, Len);
     }
-    delete[] inpStr;
     char* newStr = new char[newLen * 2];
     PostfixNotation(p_inpStr, newStr, newLen);
 
